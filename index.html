@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegetable Deception</title>
+  <link rel="apple-touch-icon" sizes="205x154" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="sing.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <main class="glass-container">
+    <div class="audio-player">
+      <audio id="myAudio" controls loop>
+        <source src="data.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <div class="controls">
+        <button type="button" onclick="rewindAudio()">⏪ 10s</button>
+        <button type="button" onclick="fastForwardAudio()">⏩ 10s</button>
+      </div>
+    </div>
+
+    <img src="infographic.png" alt="Chia Seed Benefits Infographic" class="infographic-image">
+
+    <div class="pdf-container">
+      <object data="The_Nut_Paradox.pdf" type="application/pdf" class="pdf-embed">
+        <p>Your browser does not support PDFs. <a href="The_Nut_Paradox.pdf">Download the Guide</a>.</p>
+      </object>
+    </div>
+
+    <div class="pdf-mobile-link">
+      <a href="The_Nut_Paradox.pdf" target="_blank" class="video-link">
+        📄 View "The Nut Paradox" Guide (PDF)
+      </a>
+    </div>
+
+
+
+
+
+  
+    <div
+      style="text-align: center; margin: 40px 0 20px 0; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+      <a href="https://youtu.be/9fSbk6M78W8" target="_blank" rel="noopener" class="video-link">
+        Watch related: Hidden Dangers in Nuts
+      </a>
+      <a href="https://youtu.be/iOqfSPPUUa8?si=Jql0-BbwSz1_JSRv" target="_blank" rel="noopener"
+        class="video-link">
+        Watch related: Over 60? 4 WORST Nuts You Should NEVER Touch and 4 You MUST Eat | Senior Health
+      </a>
+    </div>
+  </main>
+
+
+  <script src="audio-controls.js"></script>
+</body>
+
+</html>
